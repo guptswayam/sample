@@ -19,6 +19,8 @@ app.get("/api/test", (req, res) => {
 
 app.get("/api/count", (req, res) => {
     ct++;
+
+    console.log(ct);
     res.json({
         success: true,
         data: {
