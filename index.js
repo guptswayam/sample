@@ -3,10 +3,10 @@ const express = require("express")
 const app = express()
 
 
-app.use("/static", express.static("./static"));
+app.use("/api/static", express.static("./static"));
 
 
-app.get("/test", (req, res) => {
+app.get("/api/test", (req, res) => {
     res.json({
         success: true,
         data: {
